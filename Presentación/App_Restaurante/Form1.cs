@@ -16,5 +16,27 @@ namespace App_Restaurante
         {
             InitializeComponent();
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form formulario = new Form2();
+            formulario.ShowDialog();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Form formulario = new Form3();
+            formulario.ShowDialog();
+        }
     }
 }

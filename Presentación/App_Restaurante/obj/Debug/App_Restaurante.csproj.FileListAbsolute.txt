@@ -1,0 +1,13 @@
+C:\Users\SENA\Documents\Proyecto_Luis\App_RestauranteLuis\Presentación\App_Restaurante\bin\Debug\App_Restaurante.exe.config
+C:\Users\SENA\Documents\Proyecto_Luis\App_RestauranteLuis\Presentación\App_Restaurante\bin\Debug\App_Restaurante.exe
+C:\Users\SENA\Documents\Proyecto_Luis\App_RestauranteLuis\Presentación\App_Restaurante\bin\Debug\App_Restaurante.pdb
+C:\Users\SENA\Documents\Proyecto_Luis\App_RestauranteLuis\Presentación\App_Restaurante\obj\Debug\App_Restaurante.csproj.AssemblyReference.cache
+C:\Users\SENA\Documents\Proyecto_Luis\App_RestauranteLuis\Presentación\App_Restaurante\obj\Debug\App_Restaurante.csproj.SuggestedBindingRedirects.cache
+C:\Users\SENA\Documents\Proyecto_Luis\App_RestauranteLuis\Presentación\App_Restaurante\obj\Debug\App_Restaurante.Form1.resources
+C:\Users\SENA\Documents\Proyecto_Luis\App_RestauranteLuis\Presentación\App_Restaurante\obj\Debug\App_Restaurante.Form2.resources
+C:\Users\SENA\Documents\Proyecto_Luis\App_RestauranteLuis\Presentación\App_Restaurante\obj\Debug\App_Restaurante.Properties.Resources.resources
+C:\Users\SENA\Documents\Proyecto_Luis\App_RestauranteLuis\Presentación\App_Restaurante\obj\Debug\App_Restaurante.csproj.GenerateResource.cache
+C:\Users\SENA\Documents\Proyecto_Luis\App_RestauranteLuis\Presentación\App_Restaurante\obj\Debug\App_Restaurante.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Documents\Proyecto_Luis\App_RestauranteLuis\Presentación\App_Restaurante\obj\Debug\App_Restaurante.exe
+C:\Users\SENA\Documents\Proyecto_Luis\App_RestauranteLuis\Presentación\App_Restaurante\obj\Debug\App_Restaurante.pdb
+C:\Users\SENA\Documents\Proyecto_Luis\App_RestauranteLuis\Presentación\App_Restaurante\obj\Debug\App_Restaurante.Form3.resources
