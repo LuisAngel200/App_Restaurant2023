@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace Datos
 {
-    internal class cls_conexion
+    public class cls_conexion
     {
         public class cls_Conexion
         {
@@ -14,7 +14,7 @@ namespace Datos
             {
                 conex = new MySqlConnection();
                 //************* CONEXION LOCAL ******************
-                String servidor = "10.230.16.98";
+                String servidor = "10.230.16.144";
                 String bd = "dbs_restaurante_luis2023";
                 String usuario = "yoyito";
                 String contraseña = "Sena2023";

@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,24 +38,23 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.txt_codigo = new System.Windows.Forms.TextBox();
+            this.txt_nombre = new System.Windows.Forms.TextBox();
+            this.txt_ingredientes = new System.Windows.Forms.TextBox();
+            this.txt_valor = new System.Windows.Forms.TextBox();
+            this.cbx_tipo = new System.Windows.Forms.ComboBox();
+            this.cbx_estado = new System.Windows.Forms.ComboBox();
+            this.ptb_consultar = new System.Windows.Forms.PictureBox();
+            this.ptb_actualizar = new System.Windows.Forms.PictureBox();
+            this.ptb_nuevo = new System.Windows.Forms.PictureBox();
+            this.ptb_guardar = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_consultar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_actualizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_nuevo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_guardar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -66,6 +66,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(801, 56);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::App_Restaurante.Properties.Resources.salida__2_;
+            this.pictureBox5.Location = new System.Drawing.Point(575, 13);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(37, 45);
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox5, "Salir");
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // label1
             // 
@@ -137,121 +148,114 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Estado:";
             // 
-            // textBox1
+            // txt_codigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(140, 98);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(223, 20);
-            this.textBox1.TabIndex = 7;
+            this.txt_codigo.Location = new System.Drawing.Point(140, 98);
+            this.txt_codigo.Name = "txt_codigo";
+            this.txt_codigo.Size = new System.Drawing.Size(223, 20);
+            this.txt_codigo.TabIndex = 7;
             // 
-            // textBox2
+            // txt_nombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(143, 135);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(220, 20);
-            this.textBox2.TabIndex = 8;
+            this.txt_nombre.Location = new System.Drawing.Point(143, 135);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Size = new System.Drawing.Size(220, 20);
+            this.txt_nombre.TabIndex = 8;
             // 
-            // textBox3
+            // txt_ingredientes
             // 
-            this.textBox3.Location = new System.Drawing.Point(143, 167);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(220, 97);
-            this.textBox3.TabIndex = 9;
+            this.txt_ingredientes.Location = new System.Drawing.Point(143, 167);
+            this.txt_ingredientes.Multiline = true;
+            this.txt_ingredientes.Name = "txt_ingredientes";
+            this.txt_ingredientes.Size = new System.Drawing.Size(220, 97);
+            this.txt_ingredientes.TabIndex = 9;
             // 
-            // textBox4
+            // txt_valor
             // 
-            this.textBox4.Location = new System.Drawing.Point(143, 272);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(220, 20);
-            this.textBox4.TabIndex = 10;
+            this.txt_valor.Location = new System.Drawing.Point(143, 272);
+            this.txt_valor.Name = "txt_valor";
+            this.txt_valor.Size = new System.Drawing.Size(220, 20);
+            this.txt_valor.TabIndex = 10;
             // 
-            // comboBox1
+            // cbx_tipo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(143, 312);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(220, 21);
-            this.comboBox1.TabIndex = 11;
+            this.cbx_tipo.FormattingEnabled = true;
+            this.cbx_tipo.Location = new System.Drawing.Point(143, 312);
+            this.cbx_tipo.Name = "cbx_tipo";
+            this.cbx_tipo.Size = new System.Drawing.Size(220, 21);
+            this.cbx_tipo.TabIndex = 11;
             // 
-            // comboBox2
+            // cbx_estado
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(143, 349);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(220, 21);
-            this.comboBox2.TabIndex = 12;
+            this.cbx_estado.FormattingEnabled = true;
+            this.cbx_estado.Location = new System.Drawing.Point(143, 349);
+            this.cbx_estado.Name = "cbx_estado";
+            this.cbx_estado.Size = new System.Drawing.Size(220, 21);
+            this.cbx_estado.TabIndex = 12;
             // 
-            // pictureBox4
+            // ptb_consultar
             // 
-            this.pictureBox4.Image = global::App_Restaurante.Properties.Resources.lupa;
-            this.pictureBox4.Location = new System.Drawing.Point(515, 302);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(84, 68);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox4, "Consultar");
+            this.ptb_consultar.Image = global::App_Restaurante.Properties.Resources.lupa;
+            this.ptb_consultar.Location = new System.Drawing.Point(515, 302);
+            this.ptb_consultar.Name = "ptb_consultar";
+            this.ptb_consultar.Size = new System.Drawing.Size(84, 68);
+            this.ptb_consultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_consultar.TabIndex = 16;
+            this.ptb_consultar.TabStop = false;
+            this.toolTip1.SetToolTip(this.ptb_consultar, "Consultar");
+            this.ptb_consultar.Click += new System.EventHandler(this.ptb_consultar_Click);
             // 
-            // pictureBox3
+            // ptb_actualizar
             // 
-            this.pictureBox3.Image = global::App_Restaurante.Properties.Resources.actualizar;
-            this.pictureBox3.Location = new System.Drawing.Point(394, 302);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(84, 68);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 15;
-            this.pictureBox3.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox3, "Actualizar");
+            this.ptb_actualizar.Image = global::App_Restaurante.Properties.Resources.actualizar;
+            this.ptb_actualizar.Location = new System.Drawing.Point(394, 302);
+            this.ptb_actualizar.Name = "ptb_actualizar";
+            this.ptb_actualizar.Size = new System.Drawing.Size(84, 68);
+            this.ptb_actualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_actualizar.TabIndex = 15;
+            this.ptb_actualizar.TabStop = false;
+            this.toolTip1.SetToolTip(this.ptb_actualizar, "Actualizar");
+            this.ptb_actualizar.Click += new System.EventHandler(this.ptb_actualizar_Click);
             // 
-            // pictureBox2
+            // ptb_nuevo
             // 
-            this.pictureBox2.Image = global::App_Restaurante.Properties.Resources.comida;
-            this.pictureBox2.Location = new System.Drawing.Point(515, 198);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(84, 66);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox2, "Nuevo");
+            this.ptb_nuevo.Image = global::App_Restaurante.Properties.Resources.comida;
+            this.ptb_nuevo.Location = new System.Drawing.Point(515, 198);
+            this.ptb_nuevo.Name = "ptb_nuevo";
+            this.ptb_nuevo.Size = new System.Drawing.Size(84, 66);
+            this.ptb_nuevo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_nuevo.TabIndex = 14;
+            this.ptb_nuevo.TabStop = false;
+            this.toolTip1.SetToolTip(this.ptb_nuevo, "Nuevo");
+            this.ptb_nuevo.Click += new System.EventHandler(this.ptb_nuevo_Click);
             // 
-            // pictureBox1
+            // ptb_guardar
             // 
-            this.pictureBox1.Image = global::App_Restaurante.Properties.Resources.disquete;
-            this.pictureBox1.Location = new System.Drawing.Point(394, 198);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(84, 66);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox1, "Guardar");
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::App_Restaurante.Properties.Resources.salida__2_;
-            this.pictureBox5.Location = new System.Drawing.Point(575, 13);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(37, 45);
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox5, "Salir");
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            this.ptb_guardar.Image = global::App_Restaurante.Properties.Resources.disquete;
+            this.ptb_guardar.Location = new System.Drawing.Point(394, 198);
+            this.ptb_guardar.Name = "ptb_guardar";
+            this.ptb_guardar.Size = new System.Drawing.Size(84, 66);
+            this.ptb_guardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_guardar.TabIndex = 13;
+            this.ptb_guardar.TabStop = false;
+            this.toolTip1.SetToolTip(this.ptb_guardar, "Guardar");
+            this.ptb_guardar.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 395);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ptb_consultar);
+            this.Controls.Add(this.ptb_actualizar);
+            this.Controls.Add(this.ptb_nuevo);
+            this.Controls.Add(this.ptb_guardar);
+            this.Controls.Add(this.cbx_estado);
+            this.Controls.Add(this.cbx_tipo);
+            this.Controls.Add(this.txt_valor);
+            this.Controls.Add(this.txt_ingredientes);
+            this.Controls.Add(this.txt_nombre);
+            this.Controls.Add(this.txt_codigo);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -264,11 +268,11 @@
             this.Text = "Form2";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_consultar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_actualizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_nuevo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_guardar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,16 +288,16 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.TextBox txt_codigo;
+        private System.Windows.Forms.TextBox txt_nombre;
+        private System.Windows.Forms.TextBox txt_ingredientes;
+        private System.Windows.Forms.TextBox txt_valor;
+        private System.Windows.Forms.ComboBox cbx_tipo;
+        private System.Windows.Forms.ComboBox cbx_estado;
+        private System.Windows.Forms.PictureBox ptb_guardar;
+        private System.Windows.Forms.PictureBox ptb_nuevo;
+        private System.Windows.Forms.PictureBox ptb_actualizar;
+        private System.Windows.Forms.PictureBox ptb_consultar;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.ToolTip toolTip1;
     }
