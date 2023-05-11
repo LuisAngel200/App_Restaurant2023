@@ -15,7 +15,8 @@ namespace Datos
         private string str_valor;
         private int int_tipo;
         private int int_estado;
-        //Funcion Guardar
+
+        //*********************************************************************FUNCION GUARDAR PLATO********************************************************
         public void fnt_Guardar(
             string codigo, string nombre, string ingredientes, string valor, int tipo, int estado)
         {
@@ -32,7 +33,7 @@ namespace Datos
             cmd.ExecuteNonQuery();
             obj_conexion.fnt_Desconectar();
         }
-
+        //**********************************************************FUNCION CARGAR TIPO DE PLATO*********************************************************
         public void fnt_CargarTipo()
         {
             string sql = "select PKCodigo,Nombre from tbl_tipo";
@@ -52,7 +53,8 @@ namespace Datos
             }
         }
         public DataTable GetDt() { return dt; }
-
+        
+        //*********************************************************FUNCION CARGAR ESTADO DEL PLATO*******************************************************
         public void fnt_CargarEstado()
         {
             string sql = "select PKCodigo,Descripcion from tbl_estado";
@@ -71,7 +73,7 @@ namespace Datos
                 objCargarestado.fnt_Desconectar();
             }
         }
-       
+       //*******************************************************************FUNCION CONSULTAR PLATO*******************************************************
         public void fnt_Consultar(string codigo)
         {
             Console.WriteLine("ID" + codigo);
@@ -94,6 +96,7 @@ namespace Datos
 
             obj_Conectar.fnt_Desconectar();
         }
+        //******************************************************************FUNCION ACTUALIZAR PLATO************************************************
         public void fnt_Actualizar(string codigo, string nombre, string ingredientes, string valor, int tipo, int estado)
 
         {

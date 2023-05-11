@@ -24,14 +24,15 @@ namespace App_Restaurante
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Close();
         }
 
+        //***********************************************************FUNCION CERRAR FORM********************************************************
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             Close();
         }
 
+        //*************************************************************FUNCION GUARDAR PLATO***************************************************
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             cls_AgregarPlato objAgregarPlato = new cls_AgregarPlato(txt_codigo.Text, txt_nombre.Text, txt_ingredientes.Text, txt_valor.Text, cbx_tipo.SelectedIndex+1, cbx_estado.SelectedIndex+1);
@@ -39,6 +40,7 @@ namespace App_Restaurante
             fnt_nuevo();
         }
 
+        //***********************************************************FUNCION CARGAR TIPO DE PLATO***********************************************
         private void fnt_CargarTipo()
         {
             cls_platos objdt = new cls_platos();
@@ -48,6 +50,7 @@ namespace App_Restaurante
             cbx_tipo.DataSource = objdt.GetDt();
         }
 
+        //***********************************************************FUNCION CARGAR ESTADO DEL PLATO***********************************************
         private void fnt_CargarEstado()
         {
             cls_platos obj_Cargarestado = new cls_platos();
@@ -56,6 +59,8 @@ namespace App_Restaurante
             cbx_estado.DisplayMember = "Descripcion";
             cbx_estado.DataSource = obj_Cargarestado.getdtE();
         }
+
+        //***********************************************************FUNCION BORRAR O NUEVO*******************************************************+
         private void fnt_nuevo()
         {
             txt_codigo.Clear();
@@ -71,6 +76,7 @@ namespace App_Restaurante
             fnt_nuevo();    
         }
 
+        //***********************************************************FUNCION ACTUALIZAR************************************************************
         private void ptb_actualizar_Click(object sender, EventArgs e)
         {
             cls_ActualizarPlato objActualizar = new cls_ActualizarPlato(
@@ -78,6 +84,8 @@ namespace App_Restaurante
             MessageBox.Show("" + objActualizar.getMsn(), "Actualizar", MessageBoxButtons.OK, MessageBoxIcon.Information);
             fnt_nuevo();
         }
+
+        //***********************************************************FUNCION CONSULTAR**************************************************************
         private void fnt_Consultar(string codigo)
         {
             cls_ConsultarPlato obj_Consultar = new cls_ConsultarPlato();

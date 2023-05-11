@@ -30,7 +30,7 @@ namespace Negocio
                 cls_clientes obj_Guardar = new cls_clientes();
                 obj_Guardar.fnt_GuardarC
                     (str_codigo, str_nombre, str_apellidos, str_contacto, str_direccion);
-                str_msn = "El cliente" + str_nombre + "ha sido registrado";
+                str_msn = "El cliente " + str_nombre + " ha sido registrado";
             }
         }
         public string getMsn() { return this.str_msn; }

@@ -17,17 +17,20 @@ namespace App_Restaurante
             InitializeComponent();
         }
 
+        //*********************************************************************FUNCIONES FORM*****************************************************
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Form formulario = new Form4();
-            formulario.ShowDialog();
+            Visible = false;
+            Form4 formulario = new Form4();
+            formulario.Visible = true;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
- 
-            Form formulario = new Form2();
-            formulario.ShowDialog();     
+            Visible = false;
+            Form2 formulario = new Form2();
+            formulario.Visible = true;  
+            
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -37,10 +40,12 @@ namespace App_Restaurante
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Form formulario = new Form3();
-            formulario.ShowDialog();
+            Visible = false;
+            Form3 formulario = new Form3();
+            formulario.Visible = true;
         }
 
+        //********************************************************FUNCIONES CERRAR FORM********************************************************
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             Close();

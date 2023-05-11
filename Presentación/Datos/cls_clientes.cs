@@ -12,12 +12,13 @@ namespace Datos
         private string str_apellidos;
         private string str_contacto;
         private string str_direccion;
-
+        
+        //******************************************************************FUNCION GUARDAR CLIENTE******************************************
         public void fnt_GuardarC(string codigo, string nombre, string apellidos, string contacto, string direccion)
         {
             cls_conexion obj_Conexion = new cls_conexion();
             obj_Conexion.fnt_Conectar();
-            string comando = "insert into tbl_cliente (@PKCodigo, @Nombre, @Apellidos, @Contacto, @Direccion)";
+            string comando = "insert into tbl_cliente values (@PKCodigo, @Nombre, @Apellidos, @Contacto, @Direccion)";
             MySqlCommand cmd = new MySqlCommand(comando, obj_Conexion.conex);
             cmd.Parameters.AddWithValue("@PKCodigo", codigo);
             cmd.Parameters.AddWithValue("@Nombre", nombre);
@@ -28,10 +29,11 @@ namespace Datos
             obj_Conexion.fnt_Desconectar();
         }
 
+        //***********************************************************************FUNCION CONSULTAR CLIENTE*****************************************
         public void fnt_ConsultarC(string codigo)
         {
             Console.WriteLine("ID" + codigo);
-            String sql = "select Nombre,Apellidos,Contacto,Direccion = '" + codigo + "'";
+            String sql = "select Nombre,Apellidos,Contacto,Direccion from tbl_cliente where PKCodigo = '" + codigo + "'";
             cls_conexion obj_Conectar = new cls_conexion();
             obj_Conectar.fnt_Conectar();
 
@@ -49,13 +51,13 @@ namespace Datos
             obj_Conectar.fnt_Desconectar();
         }
 
+        //*****************************************************************************FUNCION ACTUALIZAR CLIENTE**********************************************
         public void fnt_ActualizarC(string codigo, string nombre, string apellidos, string contacto, string direccion)
 
         {
             cls_conexion obj_conexion = new cls_conexion();
             obj_conexion.fnt_Conectar();
-            string comando = "update tbl_platos set nombre=@nombre, ingredientes=@ingredientes, valor=@valor, FKCodigo_tbl_tipo=@FKCodigo_tbl_tipo, " +
-                "FKCodigo_tbl_estado=@FKCodigo_tbl_estado where PKCodigo=@PKCodigo";
+            string comando = "update tbl_cliente set nombre=@nombre, apellidos=@apellidos, contacto=@contacto, direccion=@direccion where PKCodigo=@PKCodigo";
             MySqlCommand cmd = new MySqlCommand(comando, obj_conexion.conex);
             cmd.Parameters.AddWithValue("@PKCodigo", codigo);
             cmd.Parameters.AddWithValue("@Nombre", nombre);
