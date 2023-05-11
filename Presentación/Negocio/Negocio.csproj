@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cls_ActualizarCliente.cs" />
     <Compile Include="cls_ActualizarPlato.cs" />
+    <Compile Include="cls_AgregarCliente.cs" />
     <Compile Include="cls_AgregarPlato.cs" />
+    <Compile Include="cls_ConsultarCliente.cs" />
     <Compile Include="cls_ConsultarPlato.cs" />
     <Compile Include="cls_EstadoPlato.cs" />
     <Compile Include="cls_TipoPlato.cs" />

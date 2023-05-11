@@ -1,0 +1,69 @@
+﻿using Negocio;
+using Datos;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace App_Restaurante
+{
+    public partial class Form4 : Form
+    {
+        public Form4()
+        {
+            InitializeComponent();
+            fnt_Nuevo();
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void fnt_Nuevo()
+        {
+            txt_codigoC.Clear();
+            txt_nombreC.Clear();
+            txt_apellidosC.Clear();
+            txt_contactoC.Clear();
+            txt_direccionC.Clear();
+            txt_codigoC.Focus();
+        }
+        private void ptb_Nuevo_Click(object sender, EventArgs e)
+        {
+            fnt_Nuevo();
+        }
+
+        private void ptb_GuardarC_Click(object sender, EventArgs e)
+        {
+            cls_AgregarCliente objAgregarCliente = new cls_AgregarCliente(txt_codigoC.Text, txt_nombreC.Text, txt_apellidosC.Text, txt_contactoC.Text, txt_direccionC.Text);
+            MessageBox.Show("" + objAgregarCliente.getMsn());
+            fnt_Nuevo();
+        }
+        private void fnt_ConsultarC(string codigo)
+        {
+            cls_ConsultarCliente objConsultar = new cls_ConsultarCliente();
+            objConsultar.fnt_ConsultarC(codigo);
+            txt_nombreC.Text = objConsultar.getNombre();
+            txt_apellidosC.Text = objConsultar.getApellidos();
+            txt_contactoC.Text = objConsultar.getContacto();
+            txt_direccionC.Text = objConsultar.getDireccion();
+        }
+        private void ptb_ConsultarC_Click(object sender, EventArgs e)
+        {
+            fnt_ConsultarC(txt_codigoC.Text);
+        }
+
+        private void ptb_ActualizarC_Click(object sender, EventArgs e)
+        {
+            cls_ActualizarCliente obj_Actualizar = new cls_ActualizarCliente(
+               txt_codigoC.Text, txt_nombreC.Text, txt_apellidosC.Text, txt_contactoC.Text, txt_direccionC.Text);
+            MessageBox.Show("" + obj_Actualizar.getMsn(), "Actualizar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            fnt_Nuevo();
+        }
+    }
+}

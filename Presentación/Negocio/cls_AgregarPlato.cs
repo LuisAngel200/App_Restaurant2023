@@ -34,7 +34,7 @@ namespace Negocio
                 objGuardar.fnt_Guardar
                     (str_codigo, str_nombre, str_ingredientes, str_valor, int_tipo,
                     int_estado);
-                str_msn = "El plato " + str_nombre + " ha sido registrado";
+                str_msn = "El plato" + str_nombre + "ha sido registrado";
             }
         }
         public string getMsn() { return this.str_msn; }

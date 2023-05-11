@@ -19,13 +19,15 @@ namespace App_Restaurante
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Close();
+            Form formulario = new Form4();
+            formulario.ShowDialog();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+ 
             Form formulario = new Form2();
-            formulario.ShowDialog();
+            formulario.ShowDialog();     
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -37,6 +39,11 @@ namespace App_Restaurante
         {
             Form formulario = new Form3();
             formulario.ShowDialog();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

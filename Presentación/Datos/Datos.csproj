@@ -81,6 +81,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cls_clientes.cs" />
     <Compile Include="cls_conexion.cs" />
     <Compile Include="cls_platos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

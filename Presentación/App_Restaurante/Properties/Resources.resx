@@ -118,23 +118,32 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pedido-en-linea" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pedido-en-linea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lupa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lupa1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dieta-equilibrada" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dieta-equilibrada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="nuevo (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nuevo (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="actualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\actualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="escasez" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\escasez.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="salida (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\salida (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="factura (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\factura (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dieta-equilibrada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dieta-equilibrada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="actualizar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\actualizar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="disquete1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\disquete1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="comida" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\comida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pedido-en-linea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pedido-en-linea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lupa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lupa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,7 +151,25 @@
   <data name="disquete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\disquete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="factura (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\factura (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salida (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salida (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nuevo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nuevo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="salida (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\salida (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nuevo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="actualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\actualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salida (2)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salida (2)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

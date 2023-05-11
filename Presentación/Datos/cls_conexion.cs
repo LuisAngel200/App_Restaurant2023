@@ -6,15 +6,14 @@ namespace Datos
 {
     public class cls_conexion
     {
-        public class cls_Conexion
-        {
+       
             public MySqlConnection conex;
             string cadenaconexion;
             public void fnt_Conectar()
             {
                 conex = new MySqlConnection();
                 //************* CONEXION LOCAL ******************
-                String servidor = "10.230.16.144";
+                String servidor = "10.230.16.121";
                 String bd = "dbs_restaurante_luis2023";
                 String usuario = "yoyito";
                 String contraseña = "Sena2023";
@@ -33,6 +32,5 @@ namespace Datos
                 }
             }
             public void fnt_Desconectar() { conex.Close(); }
-        }
     }
 }

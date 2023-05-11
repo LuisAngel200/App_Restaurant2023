@@ -15,11 +15,11 @@ namespace Datos
         private string str_valor;
         private int int_tipo;
         private int int_estado;
-
+        //Funcion Guardar
         public void fnt_Guardar(
             string codigo, string nombre, string ingredientes, string valor, int tipo, int estado)
         {
-            cls_Conexion obj_conexion = new cls_Conexion();
+            cls_conexion obj_conexion = new cls_conexion();
             obj_conexion.fnt_Conectar();
             string comando = "insert into tbl_platos values (@PKCodigo, @Nombre, @Ingredientes, @Valor, @FKCodigo_tbl_tipo, @FKCodigo_tbl_estado)";
             MySqlCommand cmd = new MySqlCommand(comando, obj_conexion.conex);
@@ -36,7 +36,7 @@ namespace Datos
         public void fnt_CargarTipo()
         {
             string sql = "select PKCodigo,Nombre from tbl_tipo";
-            cls_Conexion objConecta = new cls_Conexion();
+            cls_conexion objConecta = new cls_conexion();
             objConecta.fnt_Conectar();
 
             try
@@ -56,7 +56,7 @@ namespace Datos
         public void fnt_CargarEstado()
         {
             string sql = "select PKCodigo,Descripcion from tbl_estado";
-            cls_Conexion objCargarestado = new cls_Conexion();
+            cls_conexion objCargarestado = new cls_conexion();
             objCargarestado.fnt_Conectar();
 
             try
@@ -76,7 +76,7 @@ namespace Datos
         {
             Console.WriteLine("ID" + codigo);
             String sql = "select Nombre,Ingredientes,Valor,FKCodigo_tbl_tipo,FKCodigo_tbl_estado from tbl_platos where PKCodigo = '" + codigo + "'";
-            cls_Conexion obj_Conectar = new cls_Conexion();
+            cls_conexion obj_Conectar = new cls_conexion();
             obj_Conectar.fnt_Conectar();
 
             MySqlCommand comando = new MySqlCommand(sql, obj_Conectar.conex);
@@ -97,7 +97,7 @@ namespace Datos
         public void fnt_Actualizar(string codigo, string nombre, string ingredientes, string valor, int tipo, int estado)
 
         {
-            cls_Conexion obj_conexion = new cls_Conexion();
+            cls_conexion obj_conexion = new cls_conexion();
             obj_conexion.fnt_Conectar();
             string comando = "update tbl_platos set nombre=@nombre, ingredientes=@ingredientes, valor=@valor, FKCodigo_tbl_tipo=@FKCodigo_tbl_tipo, " +
                 "FKCodigo_tbl_estado=@FKCodigo_tbl_estado where PKCodigo=@PKCodigo";

@@ -32,21 +32,24 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-3, -2);
             this.panel1.Name = "panel1";
@@ -75,14 +78,14 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::App_Restaurante.Properties.Resources.salida__1_;
+            this.pictureBox4.Image = global::App_Restaurante.Properties.Resources.nuevo1;
             this.pictureBox4.Location = new System.Drawing.Point(478, 79);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(134, 119);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox4, "Salir");
+            this.toolTip1.SetToolTip(this.pictureBox4, "Registrar Cliente");
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox3
@@ -121,6 +124,17 @@
             this.toolTip1.SetToolTip(this.pictureBox1, "Agregar Platos");
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::App_Restaurante.Properties.Resources.salida__2_2;
+            this.pictureBox5.Location = new System.Drawing.Point(591, 11);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(44, 33);
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox5, "Salir");
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,6 +155,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,6 +171,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
 

@@ -68,7 +68,7 @@ namespace App_Restaurante
         }
         private void ptb_nuevo_Click(object sender, EventArgs e)
         {
-            fnt_nuevo();
+            fnt_nuevo();    
         }
 
         private void ptb_actualizar_Click(object sender, EventArgs e)
