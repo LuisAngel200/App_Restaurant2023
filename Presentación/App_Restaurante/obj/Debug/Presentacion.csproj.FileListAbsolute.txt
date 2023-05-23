@@ -79,10 +79,6 @@ C:\Users\SENA\Documents\Proyecto_Luis\App_Restaurant2023\Presentación\App_Resta
 C:\Users\SENA\Documents\Proyecto_Luis\App_Restaurant2023\Presentación\App_Restaurante\obj\Debug\Presentacion.csproj.AssemblyReference.cache
 C:\Users\SENA\Documents\Proyecto_Luis\App_Restaurant2023\Presentación\App_Restaurante\obj\Debug\Presentacion.csproj.SuggestedBindingRedirects.cache
 C:\Users\SENA\Documents\Proyecto_Luis\App_Restaurant2023\Presentación\App_Restaurante\obj\Debug\App_Restaurante.exe.config
-C:\Users\SENA\Documents\Proyecto_Luis\App_Restaurant2023\Presentación\App_Restaurante\obj\Debug\App_Restaurante.Form1.resources
-C:\Users\SENA\Documents\Proyecto_Luis\App_Restaurant2023\Presentación\App_Restaurante\obj\Debug\App_Restaurante.Form2.resources
-C:\Users\SENA\Documents\Proyecto_Luis\App_Restaurant2023\Presentación\App_Restaurante\obj\Debug\App_Restaurante.Form3.resources
-C:\Users\SENA\Documents\Proyecto_Luis\App_Restaurant2023\Presentación\App_Restaurante\obj\Debug\App_Restaurante.Form4.resources
 C:\Users\SENA\Documents\Proyecto_Luis\App_Restaurant2023\Presentación\App_Restaurante\obj\Debug\App_Restaurante.Properties.Resources.resources
 C:\Users\SENA\Documents\Proyecto_Luis\App_Restaurant2023\Presentación\App_Restaurante\obj\Debug\Presentacion.csproj.GenerateResource.cache
 C:\Users\SENA\Documents\Proyecto_Luis\App_Restaurant2023\Presentación\App_Restaurante\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
@@ -135,3 +131,7 @@ C:\Users\SENA\Desktop\WORKSPACE\App_Restaurant2023\Presentación\App_Restaurante
 C:\Users\SENA\Desktop\WORKSPACE\App_Restaurant2023\Presentación\App_Restaurante\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\SENA\Desktop\WORKSPACE\App_Restaurant2023\Presentación\App_Restaurante\obj\Debug\App_Restaurante.exe
 C:\Users\SENA\Desktop\WORKSPACE\App_Restaurant2023\Presentación\App_Restaurante\obj\Debug\App_Restaurante.pdb
+C:\Users\SENA\Documents\Proyecto_Luis\App_Restaurant2023\Presentación\App_Restaurante\obj\Debug\App_Restaurante.Facturas.resources
+C:\Users\SENA\Documents\Proyecto_Luis\App_Restaurant2023\Presentación\App_Restaurante\obj\Debug\App_Restaurante.Inicio.resources
+C:\Users\SENA\Documents\Proyecto_Luis\App_Restaurant2023\Presentación\App_Restaurante\obj\Debug\App_Restaurante.RegistroP.resources
+C:\Users\SENA\Documents\Proyecto_Luis\App_Restaurant2023\Presentación\App_Restaurante\obj\Debug\App_Restaurante.RegistroC.resources

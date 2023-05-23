@@ -15,6 +15,7 @@ namespace Datos
         private string str_valor;
         private int int_tipo;
         private int int_estado;
+        private string str_msn;
 
         //*********************************************************************FUNCION GUARDAR PLATO********************************************************
         public void fnt_Guardar(
@@ -92,6 +93,10 @@ namespace Datos
                 int_tipo = Convert.ToInt16(reader["FKCodigo_tbl_tipo"].ToString());
                 int_estado = Convert.ToInt16(reader["FKCodigo_tbl_estado"].ToString());
                 Console.WriteLine("Nombre: " + str_nombre);
+            }
+            else
+            {
+                this.str_msn = "Este plato no se encuentra registrado";
             }
 
             obj_Conectar.fnt_Desconectar();

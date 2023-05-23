@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace App_Restaurante
 {
-    public partial class Form4 : Form
+    public partial class RegistroC : Form
     {
-        public Form4()
+        public RegistroC()
         {
             InitializeComponent();
             fnt_Nuevo();
@@ -53,7 +53,7 @@ namespace App_Restaurante
         //******************************************************************FUNCION CONSULTAR CLIENTE*************************************************************
         private void fnt_ConsultarC(string codigo)
         {
-            cls_ConsultarCliente objConsultar = new cls_ConsultarCliente();
+            cls_ConsultarClientes objConsultar = new cls_ConsultarClientes();
             objConsultar.fnt_ConsultarC(codigo);
             txt_nombreC.Text = objConsultar.getNombre();
             txt_apellidosC.Text = objConsultar.getApellidos();

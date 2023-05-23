@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace App_Restaurante
 {
-    public partial class Form1 : Form
+    public partial class Inicio : Form
     {
-        public Form1()
+        public Inicio()
         {
             InitializeComponent();
         }
@@ -20,16 +20,16 @@ namespace App_Restaurante
         //*********************************************************************FUNCIONES FORM*****************************************************
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Visible = false;
-            Form4 formulario = new Form4();
-            formulario.Visible = true;
+           
+            RegistroC formulario = new RegistroC();
+            formulario.ShowDialog();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Visible = false;
-            Form2 formulario = new Form2();
-            formulario.Visible = true;  
+          
+            RegistroP formulario = new RegistroP();
+            formulario.ShowDialog();
             
         }
 
@@ -40,9 +40,9 @@ namespace App_Restaurante
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Visible = false;
-            Form3 formulario = new Form3();
-            formulario.Visible = true;
+           
+            Form formulario = new Facturas();
+            formulario.ShowDialog();
         }
 
         //********************************************************FUNCIONES CERRAR FORM********************************************************

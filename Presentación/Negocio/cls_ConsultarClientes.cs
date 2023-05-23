@@ -3,7 +3,7 @@ using System;
 
 namespace Negocio
 {
-    public class cls_ConsultarCliente
+    public class cls_ConsultarClientes
     {
         private string str_nombre;
         private string str_apellidos;

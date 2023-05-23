@@ -1,6 +1,6 @@
 ﻿namespace App_Restaurante
 {
-    partial class Form4
+    partial class RegistroC
     {
         /// <summary>
         /// Required designer variable.

@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace App_Restaurante
 {
-    public partial class Form2 : Form
+    public partial class RegistroP : Form
     {
-        public Form2()
+        public RegistroP()
         {
             InitializeComponent();
             fnt_CargarTipo();
